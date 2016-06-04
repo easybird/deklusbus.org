@@ -1,0 +1,77 @@
+/* TEMPLATE STYLES */
+
+
+/* Necessary for full page carousel*/
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* Navigation*/
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #d32f2f;
+}
+
+footer.page-footer {
+    background-color: #d32f2f;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #d32f2f;
+    }
+}
+
+
+/* Carousel*/
+
+.carousel {
+    height: 50%;
+}
+
+@media (max-width: 776px) {
+    .carousel {
+        height: 100%;
+    }
+}
+
+.carousel-item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url("../img/test/2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url("../img/test/3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url("../img/test/4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Caption*/
+
+.flex-center {
+    color: #fff;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "deklusbus.org",
+  "version": "1.0.0",
+  "description": "website for deklusbus.org",
+  "scripts": {
+    "start": "gulp develop",
+    "build": "gulp render-view",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easybird/deklusbus.org.git"
+  },
+  "author": "easybird.be <jonathan@easybird.be> (http://easybird.be/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/easybird/deklusbus.org/issues"
+  },
+  "homepage": "https://github.com/easybird/deklusbus.org#readme",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-connect": "4.0.0",
+    "gulp-livereload": "3.8.1",
+    "gulp-pug": "3.0.3",
+    "run-sequence": "1.2.1",
+    "tiny-lr": "0.2.1"
+  }
+}

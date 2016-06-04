@@ -1,13 +1,11 @@
 /* TEMPLATE STYLES */
 
-
 /* Necessary for full page carousel*/
 
 html,
 body {
     height: 100%;
 }
-
 
 /* Navigation*/
 
@@ -28,7 +26,6 @@ footer.page-footer {
         background-color: #d32f2f;
     }
 }
-
 
 /* Carousel*/
 
@@ -74,4 +71,12 @@ footer.page-footer {
 
 .flex-center {
     color: #fff;
+}
+
+/* Layout */
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }

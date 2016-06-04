@@ -1,0 +1,62 @@
+// Carousel Wrapper
+#carousel-example-1.carousel.slide.carousel-fade(data-ride='carousel')
+    // Indicators
+    ol.carousel-indicators
+        li.active(data-target='#carousel-example-1', data-slide-to='0')
+        li(data-target='#carousel-example-1', data-slide-to='1')
+        li(data-target='#carousel-example-1', data-slide-to='2')
+    // /.Indicators
+    // Slides
+    .carousel-inner(role='listbox')
+        // First slide
+        .carousel-item.active
+            // Caption
+            .flex-center.animated.fadeInDown
+                ul
+                    li
+                        h1.h1-responsive De Klusbus
+                    li
+                        p Voor al jouw klusjes aan huis, tuin en fiets.
+                    li
+                        a.btn.btn-danger.btn-lg(target='_blank', href='http://mdbootstrap.com/getting-started/')
+                            | Boek mij!
+                        a.btn.btn-default.btn-lg(target='_blank', href='http://mdbootstrap.com/material-design-for-bootstrap/')
+                            | Meer weten?
+            // Caption
+        // /.First slide
+        // Second slide
+        .carousel-item
+            // Caption
+            .flex-center.animated.fadeInDown
+                ul
+                    li
+                        h1.h1-responsive Jouw eerste hulp aan huis
+                    li
+                        p En dit allemaal tegen een betaalbare prijs.
+                    li
+                        a.btn.btn-danger.btn-lg(target='_blank', href='http://mdbootstrap.com/bootstrap-tutorial/') Ontdek meer
+            // Caption
+        // /.Second slide
+        // Third slide
+        .carousel-item
+            // Caption
+            .flex-center.animated.fadeInDown
+                ul
+                    li
+                        h1.h1-responsive Vragen voor de klusbus?
+                    li
+                        p Ga na of wij jou kunnen helpen op onze vragen-staat-vrij pagina
+                    li
+                        a.btn.btn-default.btn-lg(target='_blank', href='http://mdbootstrap.com/forums/forum/support/') Hulp nodig?
+            // Caption
+        // /.Third slide
+    // /.Slides
+    // Controls
+    a.left.carousel-control(href='#carousel-example-1', role='button', data-slide='prev')
+        span.icon-prev(aria-hidden='true')
+        span.sr-only Previous
+    a.right.carousel-control(href='#carousel-example-1', role='button', data-slide='next')
+        span.icon-next(aria-hidden='true')
+        span.sr-only Next
+    // /.Controls
+// /.Carousel Wrapper

@@ -1,0 +1,43 @@
+doctype html
+html(lang='nl-be')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+
+        title De Klusbus
+
+        block stylesheets
+            // Font Awesome
+            link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css')
+            // Bootstrap core CSS
+            link(href='css/bootstrap.min.css', rel='stylesheet')
+            // Material Design Bootstrap
+            link(href='css/mdb.min.css', rel='stylesheet')
+            // Template styles
+            link(href='css/style.css', rel='stylesheet')
+            // Favicon
+            link(rel='icon', href='./img/favicon/logo.png', sizes='32x32')
+
+        block body
+            block header
+                include header/index.pug
+
+            block content
+                .container
+                    .row
+                        | This is the layout default content: overwrite the "block content" in your own pug page!
+
+            block footer
+                include footer/index.pug
+
+            block javascript
+                // SCRIPTS
+                // JQuery
+                script(type='text/javascript', src='js/jquery-2.2.3.min.js')
+                // Bootstrap tooltips
+                script(type='text/javascript', src='js/tether.min.js')
+                // Bootstrap core JavaScript
+                script(type='text/javascript', src='js/bootstrap.min.js')
+                // MDB core JavaScript
+                script(type='text/javascript', src='js/mdb.min.js')

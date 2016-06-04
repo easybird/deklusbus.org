@@ -1,0 +1,24 @@
+// Navbar
+nav.navbar.navbar-dark.navbar-fixed-top.scrolling-navbar
+    // Collapse button
+    button.navbar-toggler.hidden-sm-up(type='button', data-toggle='collapse', data-target='#collapseEx')
+        i.fa.fa-bars
+    .container
+        // Collapse content
+        #collapseEx.collapse.navbar-toggleable-xs
+            // Navbar Brand
+            a.navbar-brand(href='index.html') Klusbus
+            // Links
+            ul.nav.navbar-nav
+                li.nav-item.active
+                    a.nav-link(href='#')
+                        | Home
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='#') Wie zijn we?
+                li.nav-item
+                    a.nav-link(href='#') Wat doen we?
+                li.nav-item
+                    a.nav-link(href='#') Prijzen
+        // /.Collapse content
+// /.Navbar

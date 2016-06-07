@@ -1,13 +1,11 @@
 /* TEMPLATE STYLES */
 
-
 /* Necessary for full page carousel*/
 
 html,
 body {
     height: 100%;
 }
-
 
 /* Navigation*/
 
@@ -28,7 +26,6 @@ footer.page-footer {
         background-color: #d32f2f;
     }
 }
-
 
 /* Carousel*/
 
@@ -52,20 +49,20 @@ footer.page-footer {
 }
 
 .carousel-item:nth-child(1) {
-    background-image: url("../img/test/2.jpeg");
+    background-image: url("../img/carousel/mikmak.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.4;
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url("../img/test/3.jpeg");
+    background-image: url("../img/carousel/de_klusbus.JPG");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel-item:nth-child(3) {
-    background-image: url("../img/test/4.jpeg");
+    background-image: url("../img/carousel/gereedschap_overzicht.JPG");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -74,4 +71,12 @@ footer.page-footer {
 
 .flex-center {
     color: #fff;
+}
+
+/* Layout */
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }

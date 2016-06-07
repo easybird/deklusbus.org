@@ -4,8 +4,7 @@
   "description": "website for deklusbus.org",
   "scripts": {
     "start": "gulp develop",
-    "build": "gulp render-view",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp render-view"
   },
   "repository": {
     "type": "git",

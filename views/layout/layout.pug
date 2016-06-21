@@ -21,15 +21,16 @@ html(lang='nl-be')
 
         block body
             block header
-                include header/index.pug
+                include header/carousel.pug
 
             block content
                 .container
                     .row
                         | This is the layout default content: overwrite the "block content" in your own pug page!
 
-            block footer
-                include footer/index.pug
+            footer.page-footer.center-on-small-only
+                block footer
+                    include footer/index.pug
 
             block javascript
                 // SCRIPTS

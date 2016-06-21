@@ -9,8 +9,12 @@ body {
 
 /* Navigation*/
 
-.navbar {
+.navbar-carousel {
     background-color: transparent;
+}
+
+.navbar-pages {
+    background-color: #d32f2f;
 }
 
 .top-nav-collapse {
@@ -56,7 +60,7 @@ footer.page-footer {
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url("../img/carousel/de_klusbus.JPG");
+    background-image: url("../img/carousel/tang.JPG");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -69,6 +73,11 @@ footer.page-footer {
 
 /*Caption*/
 
+main {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
 .flex-center {
     color: #fff;
 }
@@ -79,4 +88,18 @@ footer.page-footer {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+}
+
+.pages {
+    margin-top: 50px;
+}
+
+.extra-margins {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+#maps .fa {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }

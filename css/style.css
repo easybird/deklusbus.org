@@ -82,6 +82,20 @@ main {
     color: #fff;
 }
 
+.bd-title+p{
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.bd-content>h2:not(:first-child) {
+    margin-top: 3rem;
+}
+
+.bd-toc-link {
+    display: block;
+    padding: .25rem .75rem;
+    color: #55595c;
+
 /* Layout */
 .row-eq-height {
     display: -webkit-box;

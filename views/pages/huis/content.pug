@@ -1,0 +1,50 @@
+extends ../pages-main
+include ../../cards/mixins/blockquote
+
+block pages-content
+    .row
+        .col-md-7
+            .view.overlay.hm-white-light.z-depth-1-half
+                img.img-fluid(src="img/card/tang.JPG")
+                .mask
+        .col-md-5
+            h2.h2-responsive Hulp nodig in huis?
+            hr
+            p De klusbus gaat en staat waar jij hem wil.
+            p Zijn er herstellingen waar jij tegen opziet? Of wat klusjes waarvoor je geen tijd hebt?
+            p Geen probleem, de klusbus kan jou hierbij wellicht komen helpen.
+            a.btn.btn-danger(href="boek-de-bus.html") Boek de bus
+
+    hr.extra-margins
+
+    // Second row
+    .row
+        .col-md-3.col-md-push-9.bd-sidebar
+            .bd-sidebar
+                nav.bd-links
+                    .bd-toc-item
+                        a.bd-toc-link(href="/tuin.html")
+                            | Tuin
+                    .bd-toc-item
+                        a.bd-toc-link(href="/diensten.html")
+                            | Diensten
+        .col-md-9.col-md-pull-3.bd-content
+            h1.bd-title
+                | Huis
+            p Grote of kleine klusjes, de handigheid van klusbus komt overal van pas.
+            h2 Wat doen we?
+            p Hieronder een greep uit het aanbod. Staat jouw klus er niet tussen? Geen probleem, wij helpen graag waar we kunnen.
+            .card-columns
+                +blockquote("Algemene schrijnwerkerij")
+                +blockquote("Kleine elektriciteitswerken")
+                +blockquote("Isolatiewerken")
+                +blockquote("Kleine schilderwerken")
+                +blockquote("Herstellen van lekkende kranen en andere sanitaire problemen")
+                +blockquote("Plaatsen en isoleren van kleine gyproc wanden en plafonds")
+                +blockquote("Leggen van laminaat- of parketvloeren")
+                +blockquote("In elkaar steken van zelfbouwpakketten zoals douces en meubelen")
+                +blockquote("Betegelen van kleine oppervlaktes")
+                +blockquote("Klemmende deuren")
+            h2 Onze aanpak
+            p Eén klus per keer, of gaan we voor een algemene herstellings- en/of opknapbeurt? Het kan allemaal.
+            a.btn.btn-danger(href="boek-de-bus.html") Boek de bus

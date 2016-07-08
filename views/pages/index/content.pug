@@ -1,23 +1,10 @@
 .container
     .row
-        // First columnn
-        .col-xs-12.col-md-4
-            // Card
-            .card
-                include ../../cards/klushulp.pug
-            // /.Card
-        // First columnn
-        // Second columnn
-        .col-xs-12.col-md-4
-            // Card
-            .card
-                include ../../cards/samen-klussen.pug
-            // /.Card
-        // Second columnn
-        // Third columnn
-        .col-xs-12.col-md-4
-            // Card
-            .card
-                include ../../cards/vakantie.pug
-            // /.Card
-        // Third columnn
+        .card-deck-wrapper
+            .card-deck
+                .card
+                    include ../../cards/huis.pug
+                .card
+                    include ../../cards/tuin.pug
+                .card
+                    include ../../cards/diensten.pug

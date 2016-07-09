@@ -78,6 +78,15 @@ main {
     padding-bottom: 2rem;
 }
 
+p {
+    font-weight: 300;
+}
+
+.blockquote {
+    font-weight: 300;
+    text-align: center;
+}
+
 .flex-center {
     color: #fff;
 }

@@ -60,7 +60,8 @@ footer.page-footer {
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url("../img/carousel/tang.JPG");
+    /*TODO change photo*/
+    background-image: url("../img/carousel/vloer_in_opbouw.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -96,6 +97,11 @@ p {
     font-weight: 300;
 }
 
+.p-bd-title {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
 .bd-content>h2:not(:first-child) {
     margin-top: 3rem;
 }
@@ -104,6 +110,10 @@ p {
     display: block;
     padding: .25rem .75rem;
     color: #55595c;
+}
+
+form label {
+    font-size: 1rem;
 }
 
 /* Layout */
@@ -126,4 +136,8 @@ p {
 #maps .fa {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.card-success {
+    background: #2BBBAD;
 }

@@ -1,0 +1,65 @@
+include ../cards/mixins/checkbox
+
+form
+    fieldset.form-group
+        .row
+            .col-md-4
+                h3 Huis
+                +checkbox("Algemene schrijnwerkerij")
+                +checkbox("Kleine elektriciteitswerken")
+                +checkbox("Isolatiewerken")
+                +checkbox("Kleine schilderwerken")
+                +checkbox("Voegwerken")
+                +checkbox("Herstellen van lekkende kranen en andere sanitaire problemen")
+                +checkbox("Plaatsen en isoleren van kleine gyproc wanden en plafonds")
+                +checkbox("Leggen van laminaat- of parketvloeren")
+                +checkbox("In elkaar steken van zelfbouwpakketten zoals douces en meubelen")
+                +checkbox("Betegelen van kleine oppervlaktes")
+                +checkbox("Klemmende deuren")
+            .col-md-4
+                h3 Tuin
+                +checkbox("Maaien van gazons")
+                +checkbox("Snoeiwerken van hagen, bomen en struiken")
+                +checkbox("Herstellingen aan opritten en gevels")
+                +checkbox("Verwijderen van kleine bomen")
+                +checkbox("Fietsherstellingen")
+                +checkbox("Uitkuisen van dakgoten")
+                +checkbox("Kleine afbraakwerken")
+                +checkbox("Klaarzetten van feesten (tenten en dergelijke)")
+            .col-md-4
+                h3 Diensten
+                +checkbox("Verhuizen")
+                +checkbox("Afbraakwerken")
+                +checkbox("Op reis? Een huis oppas nodig voor planten en dieren?")
+        .row
+            .col-md-8
+                label(for='freeTextDiensten')
+                    h3 Iets anders?
+                textarea#freeTextDiensten.form-control(rows='3')
+            .col-md-4
+                h3 Onder welke formule?
+                +checkbox("Lekker gemakkelijk: de klusbus doet alles")
+                +checkbox("Samen klussen: we klussen samen")
+        .row
+            h3 Hoe wil je gecontacteerd worden?
+            .col-md-3
+                .radio
+                    label
+                        input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                        p Via email
+            .col-md-3
+                .radio
+                    label
+                        input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                        p Via telefoon
+        .row
+            br
+            .col-md-3
+                label(for='inputEmail') Email:
+                    input#inputEmail.form-control(type='email', placeholder='Vul email in')
+                    small.text-muted Wij zullen je email adres nooit met iemand delen.
+            .col-md-3
+                label(for='inputPhone') Telefoon:
+                    input#inputPhone.form-control(type='tel', placeholder='Vul telefoonnummer in')
+                    small.text-muted Wij zullen je telefoonnummer nooit met iemand delen.
+    button.btn.btn-default.btn-lg.waves-effect.waves-light(type='submit') Verstuur formulier

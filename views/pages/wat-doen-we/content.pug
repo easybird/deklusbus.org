@@ -9,76 +9,42 @@ block pages-content
         .col-md-5
             h2.h2-responsive Hulp nodig? Wij staan voor je klaar.
             hr
-            p De klusbus gaat en staat waar jij hem wil.
+            p De klusbus gaat en staat waar jij hem wil. En ook hoe je hem wil.
             p Is er een herstelling waar jij tegen opziet? Eentje waarvoor je geen tijd hebt of gewoon nog onvoldoende kan?
             p Geen probleem, de klusbus kan jou hierbij wellicht komen helpen.
-            a.btn.btn-danger(href="boek-de-bus.html") Boek mij
-
-    hr.extra-margins
-
-    // Second row
+            a.btn.btn-danger(href="boek-de-bus.html") Boek de bus
     .row
-        // First columnn
-        .col-md-4
-            // Card
-            .card
-                // Card image
-                .view.overlay.hm-white-slight
-                    img.img-fluid(src='img/carousel/mikmak.JPG', alt='')
-                    a(href='#')
-                        .mask
-                // /.Card image
-                // Card content
-                .card-block
-                    // Title
-                    h4.card-title Card title
-                    // Text
-                    p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                    a.btn.btn-primary(href='#') Read more
-                // /.Card content
-            // /.Card
-        // First columnn
-        // Second columnn
-        .col-md-4
-            // Card
-            .card
-                // Card image
-                .view.overlay.hm-white-slight
-                    img.img-fluid(src='http://mdbootstrap.com/images/regular/city/img%20(4).jpg', alt='')
-                    a(href='#')
-                        .mask
-                // /.Card image
-                // Card content
-                .card-block
-                    // Title
-                    h4.card-title Card title
-                    // Text
-                    p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                    a.btn.btn-primary(href='#') Read more
-                // /.Card content
-            // /.Card
-        // Second columnn
-        // Third columnn
-        .col-md-4
-            // Card
-            .card
-                // Card image
-                .view.overlay.hm-white-slight
-                    img.img-fluid(src='http://mdbootstrap.com/images/regular/city/img%20(8).jpg', alt='')
-                    a(href='#')
-                        .mask
-                // /.Card image
-                // Card content
-                .card-block
-                    // Title
-                    h4.card-title Card title
-                    // Text
-                    p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                    a.btn.btn-primary(href='#') Read more
-                // /.Card content
-            // /.Card
-        // Third columnn
-    // /.Second row
+        .divider-new
+            h1.h1-responsive.wow.fadeInUp Wat doen we?
+        p.p-bd-title  Huis, tuin en diensten. De klusbus kan heel wat.
+        br
+        .card-deck-wrapper
+            .card-deck
+                .card
+                    include ../../cards/huis.pug
+                .card
+                    include ../../cards/tuin.pug
+                .card
+                    include ../../cards/diensten.pug
+    .row
+        .divider-new
+            h1.h1-responsive.wow.fadeInUp Formules
+        p.p-bd-title De klusbus werkt onder verschillende formules, gaande van: Laat alles voor jou doen, over samen klussen, tot uitgebreid advies.
+        br
+    .row
+        .card-columns
+            .card.card-block.card-inverse.card-success.text-xs-center
+                blockquote.card-blockquote
+                    h4.card-title Lekker gemakkelijk
+                    p.card-text Wil jij graag gewoon jouw klusjes uitbesteden zonder zelf iets te moeten doen?
+                    p.card-text Geen probleem, de klusbus komt naar jou en voert de werken die jij van hem verwacht autonoom uit.
+            .card.card-block.card-inverse.card-success.text-xs-center
+                blockquote.card-blockquote
+                    h4.card-title Samen klussen
+                    p.card-text Wil je graag wat bijleren om het de volgende keer zelf te kunnen doen?
+                    p.card-text We kunnen samen klussen met de focus op een goeie aanpak zodat jij wat bijleert en we tegelijk jouw probleem aanpakken.
+            .card.card-block.card-inverse.card-success.text-xs-center
+                blockquote.card-blockquote
+                    h4.card-title Advies
+                    p.card-text Weet je niet goed waar te beginnen? Of wie jou kan helpen?
+                    p.card-text Bel de klusbus en we helpen je zelf op weg of verwijzen je door naar de juiste vakman.

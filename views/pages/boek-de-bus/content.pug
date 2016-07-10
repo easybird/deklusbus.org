@@ -1,40 +1,26 @@
-.pages
-    .container
+extends ../pages-main
 
-        div.row
-            div.col-md-7
-                div.view.overlay.hm-white-light.z-depth-1-half
-                    img.img-fluid(src="img/card/de_klusbus.JPG")
-                    div.mask
-            div.col-md-5
-                h2.h2-responsive Boek de bus.
-                hr
+block pages-content
+    .row
+        h1.bd-title
+            | Contacteer ons
+        p
+            | Eén of meerdere klusjes?
+            br
+            | Wij zijn bereid voor een prijs per uur heel wat van jouw klusjes te komen doen.
+            br
+            | Doe hieronder een offerte aanvraag, of bel/mail ons met jouw wensen.
+        .divider-new
+            h2.h2-responsive.wow.fadeInUp Telefoon / Mail
+        p Bel ons gerust voor meer info: + 32 491 73 75 22
+        p Mail ons met je specifieke vragen en we mailen je terug:
+            a(href="mailto:gijs@deklusbus.org") gijs@deklusbus.org
 
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-    .container-fluid
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
-        p Dit is de boek de bus pagina
+        .divider-new
+            h2.h2-responsive.wow.fadeInUp Offerte aanvraag
+        p Vink hieronder aan waarvoor je onze hulp wil inschakelen, en wij contacteren je met meer info.
+        p
+            | In de offerte aanvraag lijst vindt u alvast wat voorbeelden van klusjes.
+            | Aarzel niet om ons ook te contacteren voor iets wat niet in de lijst staat.
+
+        include ../../features/form.pug

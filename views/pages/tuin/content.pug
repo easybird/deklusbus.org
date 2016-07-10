@@ -20,14 +20,17 @@ block pages-content
     // Second row
     .row
         .col-md-3.col-md-push-9.bd-sidebar
-            .bd-sidebar
-                nav.bd-links
+            div.hidden-sm-down
+                .bd-sidebar
                     .bd-toc-item
-                        a.bd-toc-link(href="/huis.html")
-                            | Huis
-                    .bd-toc-item
-                        a.bd-toc-link(href="/diensten.html")
-                            | Diensten
+                        p Wat doen we nog?
+                    nav.bd-links
+                        .bd-toc-item
+                            a.bd-toc-link(href="/huis.html")
+                                | Huis
+                        .bd-toc-item
+                            a.bd-toc-link(href="/diensten.html")
+                                | Diensten
         .col-md-9.col-md-pull-3.bd-content
             h1.bd-title
                 | Tuin
@@ -46,3 +49,17 @@ block pages-content
             h2 Onze aanpak
             p Eén klus per keer, of gaan we voor een algemene herstellings- en/of opknapbeurt? Het kan allemaal.
             a.btn.btn-danger(href="boek-de-bus.html") Boek de bus
+    .row
+        .col-md-3.col-md-push-9.bd-sidebar
+            div.hidden-md-up
+                hr
+                .bd-toc-item
+                    p Wat doen we nog?
+                .bd-sidebar
+                    nav.bd-links
+                        .bd-toc-item
+                            a.bd-toc-link(href="/huis.html")
+                                | Huis
+                        .bd-toc-item
+                            a.bd-toc-link(href="/diensten.html")
+                                | Diensten

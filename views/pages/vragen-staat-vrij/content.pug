@@ -17,17 +17,20 @@ block pages-content
     // Second row
     .row
         .col-md-3.col-md-push-9.bd-sidebar
-            .bd-sidebar
-                nav.bd-links
-                    .bd-toc-item
-                        a.bd-toc-link(href="/huis.html")
-                            | Huis
-                    .bd-toc-item
-                        a.bd-toc-link(href="/tuin.html")
-                            | Tuin
-                    .bd-toc-item
-                        a.bd-toc-link(href="/diensten.html")
-                            | Diensten
+            div.hidden-sm-down
+                .bd-toc-item
+                    p Wat doen we?
+                .bd-sidebar
+                    nav.bd-links
+                        .bd-toc-item
+                            a.bd-toc-link(href="/huis.html")
+                                | Huis
+                        .bd-toc-item
+                            a.bd-toc-link(href="/tuin.html")
+                                | Tuin
+                        .bd-toc-item
+                            a.bd-toc-link(href="/diensten.html")
+                                | Diensten
         .col-md-9.col-md-pull-3.bd-content
             h1.bd-title
                 | Vragen staat vrij
@@ -42,3 +45,20 @@ block pages-content
             p De klusbus is mobiel, zoals de naam het zegt!
             p Stuur ons vrijblijvend een boek-ons formuliertje op en wij maken voor jou graag een prijsje.
             a.btn.btn-danger(href="boek-de-bus.html") Boek de bus
+    .row
+        .col-md-3.col-md-push-9.bd-sidebar
+            div.hidden-md-up
+                hr
+                .bd-toc-item
+                    p Wat doen we?
+                .bd-sidebar
+                    nav.bd-links
+                        .bd-toc-item
+                            a.bd-toc-link(href="/huis.html")
+                                | Huis
+                        .bd-toc-item
+                            a.bd-toc-link(href="/tuin.html")
+                                | Tuin
+                        .bd-toc-item
+                            a.bd-toc-link(href="/diensten.html")
+                                | Diensten

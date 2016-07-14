@@ -139,5 +139,9 @@ form label {
 }
 
 .card-success {
-    background: #2BBBAD;
+    background: url("/img/card/wood-card.jpg");
+}
+
+#freeTextDiensten {
+    height: 100px;
 }

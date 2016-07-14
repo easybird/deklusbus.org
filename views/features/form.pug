@@ -11,55 +11,59 @@ form
                 +checkbox("Kleine schilderwerken")
                 +checkbox("Voegwerken")
                 +checkbox("Herstellen van lekkende kranen en andere sanitaire problemen")
-                +checkbox("Plaatsen en isoleren van kleine gyproc wanden en plafonds")
+                +checkbox("Plaatsen en isoleren van wanden en plafonds")
                 +checkbox("Leggen van laminaat- of parketvloeren")
-                +checkbox("In elkaar steken van zelfbouwpakketten zoals douces en meubelen")
+                +checkbox("Monteren van meubelen, douches en keukens")
                 +checkbox("Betegelen van kleine oppervlaktes")
                 +checkbox("Klemmende deuren")
             .col-md-4
                 h3 Tuin
                 +checkbox("Maaien van gazons")
-                +checkbox("Snoeiwerken van hagen, bomen en struiken")
-                +checkbox("Herstellingen aan opritten en gevels")
-                +checkbox("Verwijderen van kleine bomen")
-                +checkbox("Fietsherstellingen")
+                +checkbox("Snoeien van hagen, bomen en struiken")
+                +checkbox("Herstellingen aan opritten, gevels en daken")
+                +checkbox("Verwijderen van kleine bomen en struiken")
                 +checkbox("Uitkuisen van dakgoten")
-                +checkbox("Kleine afbraakwerken")
-                +checkbox("Klaarzetten van feesten (tenten en dergelijke)")
+                +checkbox("Afbraakwerken")
+                +checkbox("Plaatsen van tuinhuizen")
             .col-md-4
                 h3 Diensten
                 +checkbox("Verhuizen")
+                +checkbox("Fietsherstellingen")
                 +checkbox("Afbraakwerken")
-                +checkbox("Op reis? Een huis oppas nodig voor planten en dieren?")
+                +checkbox("Op reis? Iemand nodig die je planten en dier verzorgt?")
+                +checkbox("Advies - we verwijzen je graag door naar juiste vakman")
+                +checkbox("Klaarzetten van feesten (opzetten van tenten en dergelijke)")
+                +checkbox("Onderhoud van je bedrijfsterrein, school of kantoor")
         .row
             .col-md-8
                 label(for='freeTextDiensten')
                     h3 Iets anders?
-                textarea#freeTextDiensten.form-control(rows='3')
+                textarea#freeTextDiensten.form-control(rows='5')
             .col-md-4
                 h3 Onder welke formule?
                 +checkbox("Lekker gemakkelijk: de klusbus doet alles")
                 +checkbox("Samen klussen: we klussen samen")
+                +checkbox("Professioneel advies: zodat je zelf aan de slag kunt")
         .row
             h3 Hoe wil je gecontacteerd worden?
             .col-md-3
                 .radio
                     label
-                        input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                        input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
                         p Via email
             .col-md-3
                 .radio
                     label
-                        input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                        input#optionsRadios2(type='radio', name='optionsRadios', value='option2', checked='')
                         p Via telefoon
         .row
             br
             .col-md-3
                 label(for='inputEmail') Email:
                     input#inputEmail.form-control(type='email', placeholder='Vul email in')
-                    small.text-muted Wij zullen je email adres nooit met iemand delen.
+                    small.text-muted Wij zullen je email met niemand delen.
             .col-md-3
                 label(for='inputPhone') Telefoon:
                     input#inputPhone.form-control(type='tel', placeholder='Vul telefoonnummer in')
-                    small.text-muted Wij zullen je telefoonnummer nooit met iemand delen.
+                    small.text-muted Wij zullen dit nummer met niemand delen.
     button.btn.btn-default.btn-lg.waves-effect.waves-light(type='submit') Verstuur formulier

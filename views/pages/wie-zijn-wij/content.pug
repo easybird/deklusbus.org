@@ -2,24 +2,21 @@ extends ../pages-main.pug
 
 block pages-content
     .wie-zijn-wij
-        .divider-new#doel
-            h2.h2-responsive.wow.fadeInUp Ons doel
+        .divider-new#about
+            h2.h2-responsive.wow.fadeInUp Over de klusbus
         .row
             .col-md-10
                 p Wij helpen graag.
-                p Gijs begon zijn carrière als opvoeder. Dit vanuit een overtuiging en passie voor het helpen van mensen. Met de klusbus wil Gijs zijn passies voor klussen en tuinieren combineren met het helpen van mensen.
-                div.
-                div.blockquote
-                    | De klusbus is content, als zijn klant goed geholpen is.
+                p Gijs begon zijn carrière als opvoeder. Dit vanuit een overtuiging en passie voor het helpen van mensen. Hij combineerde zijn job als opvoeder gedurende een hele tijd met het bouwen, verbouwen, klussen en tuinieren.
+                p In 2016 besloot Gijs om zijn passies voor klussen en tuinieren te combineren met zijn wens om mensen te helpen.
+                p Het concept voor de Klusbus kreeg stilaan vorm.
             .col-md-2
                 .view.overlay.hm-white-light
                     img.img-rounded.img-fluid(src="img/card/gijs_bezig.jpg")
                     .mask
-        .divider-new#about
-            h2.h2-responsive.wow.fadeInUp Over de klusbus
-        p Gijs merkte doorheen de jaren dat klussen en tuinieren zijn grote passies zijn. Hij combineerde zijn job als opvoeder gedurende een hele tijd met het klussen en tuinieren, om in 2016 de sprong te wagen tot voltijds "klusbusser".
-        //TODO foto gijs en gezion
-        p *Hier komt een foto van Gijs en zijn gezin*
+        .row
+            div.blockquote
+                | De klusbus is content, als zijn klant goed geholpen is.
         .divider-new#locatie
             h2.h2-responsive.wow.fadeInUp Waar slaapt de klusbus?
         include ../../features/maps.pug

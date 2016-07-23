@@ -1,6 +1,6 @@
 include ../cards/mixins/checkbox
 
-form
+form(action='http://www.easybird.be/klusbus' method='POST')
     fieldset.form-group
         .row
             .col-md-4
@@ -38,32 +38,32 @@ form
             .col-md-8
                 label(for='freeTextDiensten')
                     h3 Iets anders?
-                textarea#freeTextDiensten.form-control(rows='5')
+                textarea#freeTextDiensten.form-control(rows='5', name='freeText')
             .col-md-4
                 h3 Onder welke formule?
-                +checkbox("Lekker gemakkelijk: de klusbus doet alles")
-                +checkbox("Samen klussen: we klussen samen")
-                +checkbox("Professioneel advies: zodat je zelf aan de slag kunt")
+                +checkbox("Lekker gemakkelijk: de klusbus doet alles", "formule")
+                +checkbox("Samen klussen: we klussen samen", "formule")
+                +checkbox("Professioneel advies: zodat je zelf aan de slag kunt", "formule")
         .row
             h3 Hoe wil je gecontacteerd worden?
             .col-md-3
                 .radio
                     label
-                        input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+                        input#optionsRadios1(type='radio', name='contactPreference', value='email')
                         p Via email
             .col-md-3
                 .radio
                     label
-                        input#optionsRadios2(type='radio', name='optionsRadios', value='option2', checked='')
+                        input#optionsRadios2(type='radio', name='contactPreference', value='telefoon', checked='')
                         p Via telefoon
         .row
             br
             .col-md-3
                 label(for='inputEmail') Email:
-                    input#inputEmail.form-control(type='email', placeholder='Vul email in')
+                    input#inputEmail.form-control(type='email', placeholder='Vul email in', name='email')
                     small.text-muted Wij zullen je email met niemand delen.
             .col-md-3
                 label(for='inputPhone') Telefoon:
-                    input#inputPhone.form-control(type='tel', placeholder='Vul telefoonnummer in')
+                    input#inputPhone.form-control(type='tel', placeholder='Vul telefoonnummer in', name='phone')
                     small.text-muted Wij zullen dit nummer met niemand delen.
     button.btn.btn-default.btn-lg.waves-effect.waves-light(type='submit') Verstuur formulier

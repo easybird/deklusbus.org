@@ -1,5 +1,5 @@
-mixin checkbox(text)
+mixin checkbox(text, name)
     .checkbox
         label
-            input(type='checkbox')
+            input(type='checkbox', name=(name || 'klusjes'), value=text)
             p=text

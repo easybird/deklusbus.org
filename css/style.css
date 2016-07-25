@@ -5,6 +5,7 @@
 html,
 body {
     height: 100%;
+    margin: 0;
 }
 
 /* Navigation*/
@@ -144,4 +145,39 @@ form label {
 
 #freeTextDiensten {
     height: 100px;
+}
+
+.flex {
+    padding: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+
+.flex div {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+}
+
+.flex div img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 400px) {
+    .flex div { margin: 0; }
+    .flex { padding: 0; }
+}
+
+.scrollable {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }

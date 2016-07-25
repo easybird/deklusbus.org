@@ -6,6 +6,8 @@ html,
 body {
     height: 100%;
     margin: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Navigation*/
@@ -178,6 +180,5 @@ form label {
 }
 
 .scrollable {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+
 }

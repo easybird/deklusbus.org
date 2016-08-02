@@ -42,7 +42,7 @@
         setTimeout(doMoveRight, 500);
 
         function doMoveRight() {
-            let imgObjectCurrentPosition = parseInt(imgObj.style.left, 10);
+            var imgObjectCurrentPosition = parseInt(imgObj.style.left, 10);
 
             // console.log(`windowWidth:${windowWidth}`);
             // console.log(`imgObjCurrentPosition:${imgObjectCurrentPosition}`);

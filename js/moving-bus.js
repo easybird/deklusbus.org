@@ -1,8 +1,12 @@
 (function () {
-    var animate, left = 0, imgObj = null;
+    var animate, imgObjectPosition = 0, imgObj = null;
+    var imgObjectStartPosition = -130;
+    var imgObjectWidth = 150;
+    var marginRight = 50;
+    var shouldIncrement = false;
 
     function init() {
-        console.log("start moving!: ");
+        // console.log("start moving!: ");
 
         var startElement = document.getElementById('carousel-example-1');
 
@@ -13,41 +17,65 @@
         }
         var windowHeight = window.innerHeight;
         var windowWidth = window.innerWidth;
-        console.log("height: " + windowHeight);
-        console.log("width: " + windowWidth);
-        console.log("footer top: " + document.getElementById('footer').getBoundingClientRect().top);
-        console.log("startPosition: " + startPosition);
+        // console.log("height: " + windowHeight);
+        // console.log("width: " + windowWidth);
+        // console.log("footer top: " + document.getElementById('footer').getBoundingClientRect().top);
+        // console.log("startPosition: " + startPosition);
 
 
         imgObj = document.getElementById('movingBus');
         imgObj.style.display = 'block';
         imgObj.style.position = 'absolute';
         imgObj.style.top = startPosition + 'px';
-        imgObj.style.left = '-300px';
+        imgObj.style.left = imgObjectStartPosition + 'px';
         imgObj.style.visibility = 'hidden';
 
         moveRight();
     }
 
     function moveRight() {
-        var totalDiff = window.innerWidth - 400 - parseInt(imgObj.style.left, 10);
-        var diff = 5;
-        doMoveRight();
+        var windowWidth = window.innerWidth - imgObjectWidth - marginRight;
+
+        var totalDiff = windowWidth - imgObjectPosition;
+        // console.log(`totalDiff:${totalDiff}`);
+        var diff = 1;
+        setTimeout(doMoveRight, 500);
 
         function doMoveRight() {
+            let imgObjectCurrentPosition = parseInt(imgObj.style.left, 10);
 
-            left = parseInt(imgObj.style.left, 10);
-
-            if ((window.innerWidth - 400)/2 >= left) {
-                diff++;
+            // console.log(`windowWidth:${windowWidth}`);
+            // console.log(`imgObjCurrentPosition:${imgObjectCurrentPosition}`);
+            var centerOfMovementWindow = (windowWidth) / 2;
+            var centerOfImgObject = imgObjectCurrentPosition + imgObjectWidth / 2;
+            if (centerOfMovementWindow >= centerOfImgObject) {
+                if (diff < 10) {
+                    if (shouldIncrement) {
+                        diff++;
+                        shouldIncrement = false;
+                    } else {
+                        shouldIncrement = true;
+                    }
+                } else {
+                    diff++;
+                }
             } else {
+                if (diff < 10) {
+                    if (shouldIncrement) {
+                        diff--;
+                        shouldIncrement = false;
+                    } else {
+                        shouldIncrement = true;
+                    }
+                } else {
                 diff--;
+                }
             }
 
-            console.log("vitesse: " + diff);
+            // console.log("vitesse: " + diff);
 
-            if (window.innerWidth - 400 >= left) {
-                imgObj.style.left = (left + diff) + 'px';
+            if (diff > 0) {
+                imgObj.style.left = (imgObjectCurrentPosition + diff) + 'px';
                 imgObj.style.visibility = 'visible';
 
                 animate = setTimeout(function () {
@@ -86,7 +114,7 @@ function doSomething() {
 window.addEventListener('scroll', function (e) {
     if (!ticking) {
         window.requestAnimationFrame(function () {
-            console.log("hide bus: ");
+            // console.log("hide bus: ");
             doSomething(last_known_scroll_position);
             ticking = true;
         });

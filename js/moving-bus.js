@@ -106,16 +106,16 @@
 var last_known_scroll_position = 0;
 var ticking = false;
 
-function doSomething() {
+function hideBus() {
     imgObj = document.getElementById('movingBus');
     imgObj.style.display = 'none';
 }
-
-window.addEventListener('scroll', function (e) {
+var viewport = document.getElementsByTagName('body')[0];
+viewport.addEventListener('scroll', function (e) {
     if (!ticking) {
         window.requestAnimationFrame(function () {
             // console.log("hide bus: ");
-            doSomething(last_known_scroll_position);
+            hideBus(last_known_scroll_position);
             ticking = true;
         });
     }
